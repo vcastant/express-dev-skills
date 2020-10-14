@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<body>
+  <form action='/<%= skill.skill %>?_method=PUT' method='POST' autocomplete='off'>
+    End: <input type='text' name='end' value=<%= skill.end %>>
+    Skill: <input type='text' name='skill' value=<%= skill.skill %>>
+    <button type='submit'>Update</button>
+  </form>
+  <a href="/">Back to list of skills</a>
+</body>
+<%- include('partials/footer') %>
